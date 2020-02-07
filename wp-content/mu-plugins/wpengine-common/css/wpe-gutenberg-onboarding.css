@@ -1,0 +1,256 @@
+/**
+ * WP Engine Gutenberg Onboarding
+ */
+ .wpe-gutenberg-panel {
+	position: relative;
+	overflow: auto;
+	margin: 16px 0;
+ 	padding: 23px 10px 0;
+ 	border: 1px solid #e5e5e5;
+ 	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+ 	background: #fff;
+ 	font-size: 13px;
+    line-height: 2.1em;
+}
+
+.wpe-gutenberg-panel h2 {
+	margin: 0;
+	font-size: 21px;
+	font-weight: 400;
+ 	line-height: 1.2;
+ }
+
+ .wpe-gutenberg-panel h3 {
+	margin: 17px 0 0;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.wpe-gutenberg-panel li {
+	font-size: 14px;
+}
+
+.wpe-gutenberg-panel p {
+	color: #72777c;
+}
+
+.wpe-gutenberg-action a {
+	text-decoration: none;
+}
+
+.wpe-gutenberg-panel .about-description {
+	font-size: 16px;
+	margin: 0;
+}
+
+.wpe-gutenberg-panel-content hr {
+	margin: 20px -23px 0 -23px;
+	border-top: 1px solid #f3f4f5;
+	border-bottom: none;
+}
+
+.wpe-gutenberg-panel .wpe-gutenberg-panel-close {
+	position: absolute;
+	z-index: 10;
+	top: 10px;
+ 	right: 10px;
+ 	padding: 10px 15px 10px 21px;
+ 	font-size: 13px;
+ 	line-height: 1.23076923; /* Chrome rounding, needs to be 16px equivalent */
+	text-decoration: none;
+}
+
+.wpe-gutenberg-panel .wpe-gutenberg-panel-close:before {
+	position: absolute;
+	top: 8px;
+	left: 0;
+ 	transition: all .1s ease-in-out;
+ }
+
+ .wpe-gutenberg-panel .wpe-gutenberg-panel-close:before {
+     position: absolute;
+     top: 8px;
+     left: 0;
+    transition: all .1s ease-in-out;
+}
+
+.wpe-gutenberg-panel-content {
+	margin: 0 13px;
+	max-width: 1500px;
+}
+
+.wpe-gutenberg-panel img {
+	margin-top: 23px;
+	width: calc( 100% - 40px );
+	border: 1px solid #f3f4f5;
+}
+
+.wpe-gutenberg-panel .install-now.updating-message:before,
+.wpe-gutenberg-panel .install-now.updated-message:before {
+	margin-top: 11px;
+}
+
+.wpe-gutenberg-panel .wpe-gutenberg-panel-column > * {
+	padding-right: 40px;
+}
+
+.wpe-gutenberg-panel .wpe-gutenberg-panel-column-container {
+	display: flex;
+	margin-bottom: 13px;
+}
+
+@supports (display: grid) {
+	.wpe-gutenberg-panel .wpe-gutenberg-panel-column-container {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: 36% 32% 32%;
+		grid-template-columns: 36% 32% 32%;
+	}
+}
+
+.wpe-gutenberg-panel .wpe-gutenberg-panel-image-column {
+	width: 36%;
+}
+
+@supports (display: grid) {
+	.wpe-gutenberg-panel .wpe-gutenberg-panel-image-column {
+		width: auto;
+	}
+}
+
+.wpe-gutenberg-panel .wpe-gutenberg-panel-column:not(.wpe-gutenberg-panel-image-column) {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 32%;
+}
+
+@supports (display: grid) {
+	.wpe-gutenberg-panel .wpe-gutenberg-panel-column:not(.wpe-gutenberg-panel-image-column) {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-rows: auto 100px;
+		grid-template-rows: auto 100px;
+		width: auto;
+	}
+}
+
+.wpe-gutenberg-panel .wpe-gutenberg-action {
+	height: 100px;
+}
+
+@supports (display: grid) {
+	.wpe-gutenberg-panel .wpe-gutenberg-action {
+		height: auto;
+	}
+}
+
+.wpe-gutenberg-panel-column p {
+	margin-top: 7px;
+	color: #444;
+}
+
+@media screen and (max-width: 1024px) {
+
+	.wpe-gutenberg-panel .wpe-gutenberg-panel-close {
+		overflow: hidden;
+		text-indent: 40px;
+		white-space: nowrap;
+		width: 20px;
+		height: 20px;
+		padding: 5px;
+		top: 5px;
+		right: 5px;
+	}
+
+	.wpe-gutenberg-panel .wpe-gutenberg-panel-close:before {
+		font-size: 20px;
+		top: 5px;
+		left: -35px;
+	}
+
+	.wpe-gutenberg-panel .wpe-gutenberg-panel-column-container {
+		-ms-grid-columns: 50% 50%;
+		grid-template-columns: 50% 50%;
+	}
+
+	.wpe-gutenberg-panel .wpe-gutenberg-panel-image-column {
+		display: none;
+	}
+
+	.wpe-gutenberg-panel .wpe-gutenberg-panel-column:not(.wpe-gutenberg-panel-image-column) {
+		width: 50%;
+	}
+
+	@supports (display: grid) {
+		.wpe-gutenberg-panel .wpe-gutenberg-panel-column:not(.wpe-gutenberg-panel-image-column) {
+			width: auto;
+		}
+	}
+}
+
+@media screen and (max-width: 870px) {
+	.wpe-gutenberg-panel .wpe-gutenberg-panel-column-container {
+		flex-wrap: wrap;
+	}
+
+	@supports (display: grid) {
+		.wpe-gutenberg-panel .wpe-gutenberg-panel-column-container {
+			-ms-grid-columns: 100%;
+			grid-template-columns: 100%;
+		}
+	}
+
+	.wpe-gutenberg-panel .wpe-gutenberg-panel-column:not(.wpe-gutenberg-panel-image-column) {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/* Keep the close icon from overlapping the Welcome text. */
+	.wpe-gutenberg-panel .wpe-gutenberg-panel-close {
+		overflow: hidden;
+		text-indent: 40px;
+		white-space: nowrap;
+ 		width: 20px;
+ 		height: 20px;
+ 		padding: 5px;
+ 		top: 5px;
+ 		right: 5px;
+    }
+
+    /* Make the close icon larger for tappability. */
+    .wpe-gutenberg-panel .wpe-gutenberg-panel-close:before {
+        font-size: 20px;
+        top: 5px;
+        left: -35px;
+    }
+}
+
+.wpe-button-primary {
+	background-color: #FF6C29;
+}
+
+.wpe-button-secondary {
+	background-color: #0ECAD4;
+}
+
+.wpe-gutenberg-panel .wpe-gutenberg-panel-close:before {
+	background: none;
+	color: #72777c;
+	content: "\f153";
+	display: block;
+	font: normal 16px/20px dashicons;
+	speak: none;
+	height: 20px;
+	text-align: center;
+	width: 20px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.wp-core-ui .update.network,
+.wp-core-ui .install-classic-editor.network,
+.wp-core-ui .activate-classic-editor.network {
+    padding: 0 12px;
+}

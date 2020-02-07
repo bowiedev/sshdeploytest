@@ -1,0 +1,52 @@
+#autoupdater-page {
+    position: relative;
+    padding-top: 10px;
+}
+
+#autoupdater-form-wrapper {
+    padding-top: 10px;
+}
+
+#autoupdater_show_settings {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.autoupdater-toggle-indicator-wrapper {
+    margin: 10px 0;
+}
+
+.autoupdater-toggle-button,
+.autoupdater-toggle-button:hover,
+.autoupdater-toggle-button:active {
+    text-decoration: none;
+}
+
+.autoupdater-toggle-button h2 {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+.autoupdater-toggle-indicator-arrow {
+    float: left;
+    display: inline-block;
+    font: 800 20px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+.autoupdater-toggle-indicator-arrow.autoupdate-open:before {
+    content: "\f142";
+}
+
+.autoupdater-toggle-indicator-arrow.autoupdate-close:before {
+    content: "\f140";
+}
+
+.autoupdater-clearfix {
+    clear: both;
+}
